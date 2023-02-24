@@ -1,34 +1,45 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TodoItem from './Item/TodoItem';
 import classes from './Todo.module.scss'
+import CreateTodoField from "../../UI/CreateTodoField/CreateTodoField";
 
-const todos = [
+const data = [
   {
-    id: 0,
-    title: 'Send message at 5 am',
+    id: 643,
+    title: 'Take a couple of notes',
     isCompleted: false
   },
   {
-    id: 1,
-    title: 'Read the new book',
+    id: 345,
+    title: 'Smile',
     isCompleted: false
   },
-  {
-    id: 2,
-    title: 'English',
-    isCompleted: false
-  }
 ];
 
 const Todo = () => {
+  const [todos, setTodos] = useState(data);
+
+  const changeTodoIsCompleted = id => {
+    const copyTodos = [...todos];
+    const current = copyTodos.find(item => item.id === id);
+    current.isCompleted = !current.isCompleted;
+    setTodos(copyTodos);
+  };
+
+  const removeTodo = id => setTodos([...todos].filter(item => item.id !== id));
+
   return (
-    <div className={classes.Todo}>
-      <div>
-        <h1>ToDo List</h1>
-        {todos.map(todo => (
-          <TodoItem key={todo.id} todo={todo}/>
-        ))}
-      </div>
+    <div className={classes.todo}>
+      <h1>ToDo List</h1>
+      {todos.map(todo => (
+        <TodoItem
+          key={todo.id}
+          todo={todo}
+          changeTodo={changeTodoIsCompleted}
+          removeTodo={removeTodo}
+        />
+      ))}
+      <CreateTodoField setTodos={setTodos}/>
     </div>
   );
 };
