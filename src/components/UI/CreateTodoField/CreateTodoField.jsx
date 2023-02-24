@@ -17,7 +17,7 @@ const CreateTodoField = ({setTodos}) => {
     <div className={classes.inputWrapper}>
       <input
         type='text'
-        placeholder='Add a new task...'
+        placeholder='Add a new task..'
         onChange={event => setTitle(event.target.value)}
         value={title}
         onKeyPress={event => event.key === 'Enter' && addTodo(title)}
