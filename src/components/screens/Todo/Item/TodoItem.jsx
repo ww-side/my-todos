@@ -8,7 +8,7 @@ const TodoItem = ({todo, changeTodo, removeTodo}) => {
     <div className={classes.todoItem}>
       <div className={classes.todoItemWrapper} onClick={() => changeTodo(todo.id)}>
       <div><Check isCompleted={todo.isCompleted}/></div>
-      <span className={todo.isCompleted ? classes.todoTextCompleted : classes.todoText}>
+      <span className={`${classes.todoText} ${todo.isCompleted ? classes.todoTextCompleted : classes.todoText}`}>
         {todo.title}
       </span>
       </div>
