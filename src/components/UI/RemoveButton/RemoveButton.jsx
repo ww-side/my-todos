@@ -5,7 +5,7 @@ import classes from './RemoveButton.module.scss'
 const RemoveButton = ({todo, removeTodo}) => {
   return (
     <div>
-      <BsTrash size={22} className={classes.removeButton} onClick={() => removeTodo(todo.id)}/>
+      <BsTrash size={24} className={classes.removeButton} onClick={() => removeTodo(todo.id)}/>
     </div>
   );
 };
