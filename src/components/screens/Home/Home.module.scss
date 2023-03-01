@@ -1,0 +1,138 @@
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  img {
+    margin-top: 100px;
+    height: 400px;
+  }
+}
+
+.title {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 530px;
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 150px;
+    font-weight: bolder;
+  }
+}
+
+.subtitle {
+  font-size: 51px;
+  font-weight: lighter;
+  margin-bottom: 100px;
+  span {
+    border-bottom: 3px black solid;
+  }
+}
+
+.startRightNow {
+  margin-bottom: 20px;
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.description {
+  display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  img {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+.descriptionItem {
+  margin-left: 100px;
+  p {
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  span {
+    display: flex;
+    justify-content: right;
+    font-size: 40px;
+    font-weight: normal;
+  }
+}
+
+.formBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 70px;
+    font-weight: bold;
+  }
+}
+
+.form {
+  width: 650px;
+  height: 550px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #1B1A17;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+  color: #ffffff;
+}
+
+.fieldWithInput {
+  display: flex;
+  justify-content: space-between;
+  .fieldWithInputItem {
+    display: flex;
+    flex-direction: column;}
+}
+
+label {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+input {
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.textareaMessage {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.formContainer {
+  margin: 30px;
+}
