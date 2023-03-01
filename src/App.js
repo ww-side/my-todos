@@ -1,9 +1,9 @@
-import Todo from "./components/screens/Todo/Todo";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
     <div>
-      <Todo/>
+      <AppRouter/>
     </div>
   );
 }
