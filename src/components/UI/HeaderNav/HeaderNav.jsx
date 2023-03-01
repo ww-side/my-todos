@@ -1,6 +1,6 @@
 import classes from './HeaderNav.module.scss';
 import {Link} from 'react-router-dom';
-import logo from '../../../assets/notepadLogo.png';
+import logo from '../../../assets/logo.png';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import {useState} from 'react';
 
