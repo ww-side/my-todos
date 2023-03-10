@@ -3,6 +3,7 @@ import classes from './Home.module.scss'
 import titlePicture from '../../../assets/titlePicture.png'
 import person from '../../../assets/personLarry.png';
 import Footer from "../../UI/Footer/Footer";
+import Button from "../../UI/Button/Button";
 
 const Home = () => {
   return (
@@ -48,6 +49,9 @@ const Home = () => {
                 <div className={classes.textareaMessage}>
                   <label htmlFor='textarea'>Message</label>
                   <textarea id='textarea' cols='30' rows='10'></textarea>
+                </div>
+                <div className={classes.buttonSubmit}>
+                  <Button text={'Submit'}/>
                 </div>
               </form>
             </div>

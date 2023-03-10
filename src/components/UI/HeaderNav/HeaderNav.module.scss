@@ -40,6 +40,7 @@
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10;
+  -webkit-transition: left 0.5s;
   transition: left 0.5s;
 }
 
@@ -56,9 +57,14 @@
   left: 0;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .links {
   font-size: 40px;
   text-transform: uppercase;
+  -webkit-transition: color 0.5s;
   transition: color 0.5s;
   &:hover {
     color: #fff;
@@ -66,5 +72,15 @@
     0 0 15px #000000,
     0 0 40px #000000,
     0 0 90px #000000;
+  }
+}
+
+@media (max-width: 700px) {
+  .logoItem {
+    margin-left: 15px;
+  }
+
+  .mobileBtn {
+    right: 15px;
   }
 }

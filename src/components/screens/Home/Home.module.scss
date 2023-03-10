@@ -14,7 +14,6 @@
 
 .title {
   margin-top: 50px;
-  margin-left: 50px;
   width: 530px;
   h1 {
     margin: 0;
@@ -81,12 +80,13 @@
     margin: 0;
     font-size: 70px;
     font-weight: bold;
+    text-align: center;
   }
 }
 
 .form {
   width: 650px;
-  height: 550px;
+  height: 570px;
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #1B1A17;
@@ -100,7 +100,8 @@
   justify-content: space-between;
   .fieldWithInputItem {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+  }
 }
 
 label {
@@ -133,6 +134,225 @@ input {
   }
 }
 
+.buttonSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
 .formContainer {
   margin: 30px;
+}
+
+@media (max-width: 1284px) {
+  .titleWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subtitle {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .startRightNow {
+    margin-top: 50px;
+  }
+
+  .description {
+    margin-right: 0;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .descriptionItem {
+    margin-left: 0;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .title {
+    h1 {
+      font-size: 85px;
+      text-align: center;
+    }
+  }
+
+  .subtitle {
+    font-size: 41px;
+    margin-bottom: 0;
+    span {
+      border-bottom: 1px black solid;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    width: 550px;
+    height: 570px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .textareaMessage {
+    textarea {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .titleWrapper {
+    img {
+      margin-top: 50px;
+      height: 250px;
+      width: 330px;
+    }
+  }
+
+  .title {
+    width: 400px;
+  }
+
+  .startRightNow {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  .description {
+    display: flex;
+    img {
+      width: 160px;
+      height: 250px;
+    }
+  }
+
+  .descriptionItem {
+    p {
+      font-size: 25px;
+    }
+    span {
+      font-size: 25px;
+    }
+  }
+
+  .formBlock {
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  .form {
+    width: 400px;
+    height: 600px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .fieldWithInput {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .textareaMessage {
+    textarea {
+      font-size: 16px;
+    }
+  }
+
+  .formContainer {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .titleWrapper {
+    img {
+      height: 220px;
+      width: 290px;
+    }
+  }
+
+  .title {
+    width: 350px;
+    h1 {
+      font-size: 75px;
+    }
+  }
+
+  .subtitle {
+    font-size: 31px;
+    margin-bottom: 0;
+  }
+
+  .startRightNow {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .descriptionItem {
+    p {
+      font-size: 18px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .formBlock {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .form {
+    width: 350px;
+    height: 600px;
+  }
 }
